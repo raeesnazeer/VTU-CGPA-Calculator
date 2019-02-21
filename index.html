@@ -1,23 +1,40 @@
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/body.css">
 <script src= "js/cgpa.js"></script>
- 
-<div ng-app="CalculatorApp" ng-controller="CalculatorController">
-  <p>ENGINEERING MATHEMATICS III: <input type="number" ng-model="sub1"></p>
-  <p>ANALOG & DIGITAL ELECTRONICS: <input type="number" ng-model="sub2"></p>
-    <p>DATA STRUCTURES AND APPLICATIONS: <input type="number" ng-model="sub3"></p>
-  <p>COMPUTER ORGANIZATION: <input type="number" ng-model="sub4"></p>
-    <p>UNIX AND SHELL PROGRAMMING: <input type="number" ng-model="sub5"></p>
-  <p>DISCRETE MATHEMATICAL STRUCTURES: <input type="number" ng-model="sub6"></p>
-    <p>KANNADA/CPH: <input type="number" ng-model="sub7"></p>
-  <p><b>LABS</b></p>
-      <p>ANALOG AND DIGITAL ELECTRONICS LABORATORY: <input type="number" ng-model="lab1"></p>
-  <p>DATA STRUCTURES LABORATORY: <input type="number" ng-model="lab2"></p>
+<title>VTU CGPA Calculator</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">VTU SGPA Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+
+    </div>
+  </div>
+</nav>
+
+<div class="body" ng-app="CalculatorApp" ng-controller="CalculatorController">
+
+  <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>ANALOG & DIGITAL ELECTRONICS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>DATA STRUCTURES AND APPLICATIONS: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>COMPUTER ORGANIZATION: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>UNIX AND SHELL PROGRAMMING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>DISCRETE MATHEMATICAL STRUCTURES: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+    <label>KANNADA/CPH: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub7"><button class="inputsidebar">/50</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>ANALOG AND DIGITAL ELECTRONICS LABORATORY: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>DATA STRUCTURES LABORATORY: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
   
-  <p><select ng-model="operator">
-        <option>+</option>
-        <option>*</option>
-        <option>-</option>
-        <option>/</option>
-     </select></p>
-  <p>CGPA: {{ result() }}</p>
+
+  <label class="sgpa">SGPA: {{ result() }}</label>
  </div>

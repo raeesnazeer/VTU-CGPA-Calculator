@@ -1,0 +1,40 @@
+.body {
+    padding: 55px;
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 388px;
+    text-align: left;
+}
+input {
+    display: inline-block;
+    float: left;
+    background: #f8f9fa;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 2px;
+}
+.inputsidebar {
+    background: #00d2a1;
+    padding: 1px;
+    width: 45px;
+    border: 1px solid #03c396;
+    margin: 4px;
+    color: #fff;
+    border-radius: 0px 4px 4px 0px;
+}
+.labs {
+    margin: 31px 0px;
+}
+.sgpa {
+    background: #1db0e8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+
+    font-size: 26px;
+    font-weight: bold;
+}

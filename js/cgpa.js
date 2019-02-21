@@ -31,7 +31,9 @@ angular.module('CalculatorApp', [])
 			var gradeLab2 = $scope.calculateGrade($scope.lab2);
 			
 			var sgpa = ((gradeSub1*4)+(gradeSub2*4)+(gradeSub3*4)+(gradeSub4*4)+(gradeSub5*3)+(gradeSub6*4)+(gradeSub7*1)+(gradeLab1*2)+(gradeLab2*2))/28;
-			
+			if( isNaN( sgpa ) ){
+return "Enter all the Marks";
+}else
 			return sgpa;
 			
 
