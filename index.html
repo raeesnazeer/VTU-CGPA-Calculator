@@ -1,0 +1,23 @@
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script src= "js/cgpa.js"></script>
+ 
+<div ng-app="CalculatorApp" ng-controller="CalculatorController">
+  <p>ENGINEERING MATHEMATICS III: <input type="number" ng-model="sub1"></p>
+  <p>ANALOG & DIGITAL ELECTRONICS: <input type="number" ng-model="sub2"></p>
+    <p>DATA STRUCTURES AND APPLICATIONS: <input type="number" ng-model="sub3"></p>
+  <p>COMPUTER ORGANIZATION: <input type="number" ng-model="sub4"></p>
+    <p>UNIX AND SHELL PROGRAMMING: <input type="number" ng-model="sub5"></p>
+  <p>DISCRETE MATHEMATICAL STRUCTURES: <input type="number" ng-model="sub6"></p>
+    <p>KANNADA/CPH: <input type="number" ng-model="sub7"></p>
+  <p><b>LABS</b></p>
+      <p>ANALOG AND DIGITAL ELECTRONICS LABORATORY: <input type="number" ng-model="lab1"></p>
+  <p>DATA STRUCTURES LABORATORY: <input type="number" ng-model="lab2"></p>
+  
+  <p><select ng-model="operator">
+        <option>+</option>
+        <option>*</option>
+        <option>-</option>
+        <option>/</option>
+     </select></p>
+  <p>CGPA: {{ result() }}</p>
+ </div>
