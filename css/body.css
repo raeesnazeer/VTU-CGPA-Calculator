@@ -1,5 +1,10 @@
 .body {
-    padding: 55px;
+    padding: 40px;
+	width: 100%;
+	    min-height: 25%;
+}
+.branchSelect {
+    padding: 25px 0px 0px 40px;
 }
 label{
     display: inline-block;
@@ -8,7 +13,7 @@ label{
     width: 388px;
     text-align: left;
 }
-input {
+input,select {
     display: inline-block;
     float: left;
     background: #f8f9fa;
@@ -34,7 +39,10 @@ input {
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-
+    width: 100%;
     font-size: 26px;
     font-weight: bold;
+}
+.footer {
+font-family: lato;
 }
