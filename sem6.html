@@ -1,0 +1,116 @@
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
+<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/body.css">
+<script src= "js/cgpa6.js"></script>
+<title>VTU CGPA Calculator</title>
+</head>
+<div ng-app="CalculatorApp" ng-controller="CalculatorController" style="
+    display: block;
+    width: 100%;
+">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://vtucgpa.me/">VTU SGPA Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="https://vtucgpa.me/">Home <span class="sr-only">(current)</span></a>
+	  <a class="nav-item nav-link active" href="#">VI Sem <span class="sr-only">(current)</span></a>
+    </div>
+  </div>
+</nav>
+<center><script type="text/javascript" src="https://adhitzads.com/1032028"></script></center>
+ <div class="branchSelect">
+<label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+<option value="">--Select Branch--</option>
+</select>
+
+</div>
+<div class="body" >
+<form>
+<div ng-show='cs'>
+  <label>CRYPTOGRAPHY, NETWORK SECURITY AND CYBER LAW: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>COMPUTER GRAPHICS AND VISUALIZATION: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>SYSTEM SOFTWARE AND COMPILER DESIGN: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>OPERATING SYSTEMS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 2: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>OPEN ELECTIVE 2: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>SYSTEM SOFTWARE AND OPERATING SYSTEM LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>COMPUTER GRAPHICS LAB WITH MINI PROJECT: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset"></div>
+<div ng-show='is'>
+  <label>CRYPTOGRAPHY, NETWORK SECURITY AND CYBER LAW: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>FILE STRUCTURES: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>SOFTWARE TESTING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>OPERATING SYSTEMS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 2: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>OPEN ELECTIVE 2: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>SOFTWARE TESTING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>FILE STRUCTURES LAB WITH MINI PROJECT: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset"></div>
+<div ng-show='ec'>
+  <label>DIGITAL COMMUNICATION: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>ARM MICROCONTROLLER & EMBEDDED SYSTEMS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+    <label>VLSI DESIGN: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>COMPUTER COMMUNICATION NETWORKS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE-2: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>OPEN ELECTIVE-2: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>EMBEDDED CONTROLLER LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>COMPUTER NETWORKS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+  </div>
+<div ng-show='civil'>
+  <label>CONSTRUCTION MANAGEMENT AND ENTREPRENEURSHIP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>DESIGN OF STEEL STRUCTURAL ELEMENTS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>HIGHWAY ENGINEERING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>WATER SUPPLY AND TREATMENT ENGINEERING: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 2: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>OPEN ELECTIVE 2: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>SOFTWARE APPLICATION LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>EXTENSIVE SURVEY PROJECT /CAMP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+  </div>
+<div ng-show='mech'>
+  <label>FINITE ELEMENT ANALYSIS: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>COMPUTER INTEGRATED MANUFACTURING: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+    <label>HEAT TRANSFER: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>DESIGN OF MACHINE ELEMENTS -2: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE-2: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>OPEN ELECTIVE-2: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"></br><button class="inputsidebar">/100</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>HEAT TRANSFER LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>MODELING AND ANALYSIS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"></br><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset"></div>  
+  <label class="sgpa">SGPA: {{ result() }}</label>
+ <center><iframe data-aa='1127080' src='//ad.a-ads.com/1127080?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe>
+</center>
+ </div> </div>
+
+<center><footer class="footer">Powered by <a href="https://rooloodesigns.com">Rooloo </a></footer></center>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135018570-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135018570-1');
+</script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</footer>
