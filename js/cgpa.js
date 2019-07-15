@@ -2,46 +2,24 @@ angular.module('CalculatorApp', [])
     .controller('CalculatorController', function($scope) {
 		$scope.arrlist = [{
 "userid": 1,
-"name": "CS/IS"
+"name": "PHYSICS"
 }, {
 "userid": 2,
-"name": "EC"
-}, {
-"userid": 3,
-"name": "CIVIL"
-},{
-"userid": 4,
-"name": "MECH"
+"name": "CHEMISTRY"
 }];
+
 $scope.getdetails = function () {
 if ($scope.userselected.userid == "1")
 {
-$scope.cs = true;
-$scope.ec = false;
-$scope.civil = false;
-$scope.mech = false;
+$scope.physics = true;
+$scope.chemistry = false;
 }
 else if ($scope.userselected.userid == "2")
 {
-	$scope.cs = false;
-$scope.ec = true;
-$scope.civil = false;
-$scope.mech = false;
+	$scope.physics = false;
+$scope.chemistry = true;
 }
-else if ($scope.userselected.userid == "3")
-{
-	$scope.cs = false;
-$scope.ec = false;
-$scope.civil = true;
-$scope.mech = false;
-}
-else if ($scope.userselected.userid == "4")
-{
-	$scope.cs = false;
-$scope.ec = false;
-$scope.civil = false;
-$scope.mech = true;
-}
+
 }
 
 		$scope.calculateGrade = function(item) {			
@@ -71,11 +49,10 @@ $scope.mech = true;
 			var gradeSub4 = $scope.calculateGrade($scope.sub4);
 			var gradeSub5 = $scope.calculateGrade($scope.sub5);
 			var gradeSub6 = $scope.calculateGrade($scope.sub6);
-			var gradeSub7 = $scope.calculateGrade(($scope.sub7)*2);
 			var gradeLab1 = $scope.calculateGrade($scope.lab1);
 			var gradeLab2 = $scope.calculateGrade($scope.lab2);
 			
-			var sgpa = ((gradeSub1*4)+(gradeSub2*4)+(gradeSub3*4)+(gradeSub4*4)+(gradeSub5*3)+(gradeSub6*4)+(gradeSub7*1)+(gradeLab1*2)+(gradeLab2*2))/28;
+			var sgpa = ((gradeSub1*4)+(gradeSub2*4)+(gradeSub3*3)+(gradeSub4*3)+(gradeSub5*3)+(gradeSub6*1)+(gradeLab1*1)+(gradeLab2*1))/20;
 			if( isNaN( sgpa ) ){
 return "Enter the Marks";
 }else
