@@ -1,10 +1,17 @@
 .body {
-    padding: 40px;
-	width: 100%;
-	    min-height: 25%;
+    padding: 2% 5%;
+    width: 71%;
+    min-height: 25%;
+    border-right: 1px solid #eaeaea;
+	float: left;
+}
+.bg-light {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 35px;
+	background-color: white !important;
 }
 .branchSelect {
-    padding: 25px 0px 0px 40px;
+    padding: 3% 0 0 5%;
 }
 label{
     display: inline-block;
@@ -24,7 +31,7 @@ input,select {
 }
 .inputsidebar {
     background: #00d2a1;
-    padding: 1px;
+    padding: 0px;
     width: 45px;
     border: 1px solid #03c396;
     margin: 4px;
@@ -43,6 +50,34 @@ input,select {
     font-size: 26px;
     font-weight: bold;
 }
+
 .footer {
-font-family: lato;
+    font-family: lato;
+    background: #3a3a3a;
+    color: #fff;
+    padding: 40px;
+    border-top: 1px solid #7a7a7a;
+    float: left;
+    width: 100%;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    color: #fff;
+}
+
+.navbar-nav {
+    font-weight: 600;
+}
+a.nav-item.nav-link {
+    margin: 7px;
+    padding: 1px;
+    color: #3a3a3a !important;
+}
+.sidebar
+{
+	width: 29%;
+	float: right;
+	    padding: 1%;
 }
