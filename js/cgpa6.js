@@ -20,6 +20,7 @@ $scope.getdetails = function () {
 if ($scope.userselected.userid == "1")
 {
 $scope.cs = true;
+$scope.is = false;
 $scope.ec = false;
 $scope.civil = false;
 $scope.mech = false;
@@ -27,22 +28,33 @@ $scope.mech = false;
 else if ($scope.userselected.userid == "2")
 {
 	$scope.cs = false;
-$scope.ec = true;
+$scope.is = true;
+$scope.ec = false;
 $scope.civil = false;
 $scope.mech = false;
 }
 else if ($scope.userselected.userid == "3")
 {
 	$scope.cs = false;
-$scope.ec = false;
-$scope.civil = true;
+	$scope.is = false;
+$scope.ec = true;
+$scope.civil =false ;
 $scope.mech = false;
 }
 else if ($scope.userselected.userid == "4")
 {
 	$scope.cs = false;
+	$scope.is = false;
 $scope.ec = false;
-$scope.civil = false;
+$scope.civil = true;
+$scope.mech = false;
+}
+else if ($scope.userselected.userid == "5")
+{
+	$scope.cs = false;
+	$scope.is = false;
+$scope.ec = false;
+$scope.civil = false ;
 $scope.mech = true;
 }
 }
