@@ -1,0 +1,105 @@
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
+<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/body.css">
+<script src= "js/cgpa.js"></script>
+<title>VTU CGPA Calculator</title>
+</head>
+<div ng-app="CalculatorApp" ng-controller="CalculatorController" style="
+    display: block;
+    width: 100%;
+">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://vtucgpa.me/">VTU SGPA Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="https://vtucgpa.me/">Home <span class="sr-only">(current)</span></a>
+	  <a class="nav-item nav-link active" href="#">II Sem <span class="sr-only">(current)</span></a>
+    </div>
+  </div>
+</nav>
+<center><script type="text/javascript" src="https://adhitzads.com/1032028"></script></center>
+ <div class="branchSelect">
+<label>SELECT YOUR CYCLE: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+<option value="">--Select Cycle--</option>
+</select>
+
+</div>
+<div class="body" >
+<form>
+<div ng-show='physics'>
+  <label>CALCULUS AND LINEAR ALGEBRA: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>ENGINEERING PHYSICS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>BASIC ELECTRICAL ENGINEERING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>ELEMENTS OF CIVIL ENGINEERING AND MECHANICS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>ENGINEERING GRAPHICS: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>TECHNICAL ENGLISH-I: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+     <div class="labs"> <label>ENGINEERING PHYSICS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>BASIC ELECTRICAL ENGINEERING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset"></div>
+<div ng-show='chemistry'>
+  <label>CALCULUS AND LINEAR ALGEBRA: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>ENGINEERING CHEMISTRY: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>C PROGRAMMING FOR PROBLEM SOLVING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>BASIC ELECTRONICS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>ELEMENTS OF MECHANICAL ENGINEERING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>TECHNICAL ENGLISH-I: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+     <div class="labs"> <label>ENGINEERING CHEMISTRY LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>C PROGRAMMING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+  </div>
+<!--<div ng-show='civil'>
+  <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>STRENGTH OF MATERIALS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>FLUID MECHANICS: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>BASIC SURVEYING: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>ENGINEERING GEOLOGY: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>BUILDING MATERIALS AND CONSTRUCTION: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+    <label>KANNADA/CPH: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub7"><button class="inputsidebar">/50</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>BUILDING MATERIALS TESTING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>BASIC SURVEYING PRACTICE: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+  </div>
+<div ng-show='mech'>
+  <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>MATERIALS SCIENCE: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>BASIC THERMODYNAMICS: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>MECHANICS OF MATERIALS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>METAL CASTING AND WELDING / MACHINE TOOLS AND OPERATIONS: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub6"><button class="inputsidebar">/100</button></br>
+	 <label>CAMD / MECHANICAL MEASUREMENTS AND METROLOGY: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub5"></br><button class="inputsidebar">/100</button></br>
+    <label>KANNADA/CPH: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub7"></br><button class="inputsidebar">/50</button></br>
+  <label><b>LABS</b></label>
+     <div class="labs"> <label>MATERIALS TESTING / MECHANICAL MEASUREMENTS AND METROLOGY LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>FOUNDRY AND FORGING LAB/ MACHINE SHOP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"></br><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset"></div>  -->
+  <label class="sgpa">SGPA: {{ result() }}</label>
+ <center><iframe data-aa='1127080' src='//ad.a-ads.com/1127080?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe>
+</center>
+ </div> </div>
+
+<center><footer class="footer">Powered by <a href="https://rooloodesigns.com">Rooloo </a></footer></center>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135018570-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135018570-1');
+</script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</footer>
