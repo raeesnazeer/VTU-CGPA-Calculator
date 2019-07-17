@@ -79,8 +79,19 @@ $scope.mech = true;
 			if( isNaN( sgpa ) ){
 return "Enter the Marks";
 }else
+	sgpa=sgpa.toFixed(2);
 			return sgpa;
 			
 
         };
+		$scope.cgpa4sem = function() {
+					var cgpa=(($scope.cg123*76)+($scope.cg4*28))/104;
+								if( isNaN( cgpa ) ){
+return "0";
+}else
+					cgpa=cgpa.toFixed(2);
+					
+					return cgpa;
+				};
+		
     });
