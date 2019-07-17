@@ -31,7 +31,7 @@ input,select {
 }
 .inputsidebar {
     background: #00d2a1;
-    padding: 0px;
+    float: left;
     width: 45px;
     border: 1px solid #03c396;
     margin: 4px;
@@ -80,4 +80,23 @@ a.nav-item.nav-link {
 	width: 29%;
 	float: right;
 	    padding: 1%;
+}
+@media screen and (max-width: 992px) {
+	.body {
+    width: 100%;
+	float: none;
+	    border-right: 0;
+}
+.sidebar
+{
+	width: 29%;
+	float: none;
+	    padding: 1%;
+}
+}
+input[type="reset"] {
+    float: right;
+    background: #e70d2d;
+    color: #fff;
+    padding: 3px 10px;
 }
