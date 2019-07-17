@@ -62,15 +62,6 @@ return "Enter the Marks";
 			
 
         };
-		        $scope.cgpa3sem = function() {
-					var cgpa=(($scope.cg12*48)+($scope.cg3*28))/76;
-								if( isNaN( cgpa ) ){
-return "0";
-}else
-					cgpa=cgpa.toFixed(2);
-					
-					return cgpa;
-				};
 				
     });
 	

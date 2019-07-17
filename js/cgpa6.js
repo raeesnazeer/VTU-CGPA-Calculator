@@ -3,7 +3,7 @@ angular.module('CalculatorApp', [])
 		$scope.arrlist = [{
 "userid": 1,
 "name": "CS"
-}, {
+},{
 "userid": 2,
 "name": "IS"
 },{
@@ -27,7 +27,7 @@ $scope.mech = false;
 }
 else if ($scope.userselected.userid == "2")
 {
-	$scope.cs = false;
+$scope.cs = false;
 $scope.is = true;
 $scope.ec = false;
 $scope.civil = false;
@@ -35,8 +35,8 @@ $scope.mech = false;
 }
 else if ($scope.userselected.userid == "3")
 {
-	$scope.cs = false;
-	$scope.is = false;
+$scope.cs = false;
+$scope.is = false;
 $scope.ec = true;
 $scope.civil =false ;
 $scope.mech = false;
@@ -86,7 +86,7 @@ $scope.mech = true;
 			var gradeSub4 = $scope.calculateGrade($scope.sub4);
 			var gradeSub5 = $scope.calculateGrade($scope.sub5);
 			var gradeSub6 = $scope.calculateGrade($scope.sub6);
-			.
+			
 			var gradeLab1 = $scope.calculateGrade($scope.lab1);
 			var gradeLab2 = $scope.calculateGrade($scope.lab2);
 			
@@ -94,8 +94,18 @@ $scope.mech = true;
 			if( isNaN( sgpa ) ){
 return "Enter the Marks";
 }else
+	sgpa=sgpa.toFixed(2);
 			return sgpa;
 			
 
         };
+		$scope.cgpa3sem = function() {
+					var cgpa=(($scope.cg12345*158)+($scope.cg6*26))/184;
+								if( isNaN( cgpa ) ){
+return "0";
+}else
+					cgpa=cgpa.toFixed(2);
+					
+					return cgpa;
+				};
     });
