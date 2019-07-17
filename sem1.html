@@ -1,4 +1,4 @@
-  <head>
+    <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,24 +17,44 @@
     display: block;
     width: 100%;
 ">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="https://vtucgpa.me/">VTU SGPA Calculator</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+   <a class="navbar-brand" href="#">
+    <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" alt="">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <right>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="https://vtucgpa.me/">Home <span class="sr-only">(current)</span></a>
-	  <a class="nav-item nav-link active" href="#">I Sem <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="https://vtucgpa.me/">Home <span class="sr-only">(current)</span></a>
+	  <a class="nav-item nav-link " href="http://results.vtu.ac.in/">Results</a>
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SGPA Calculator
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item active" href="#">I Semester</a>
+          <a class="dropdown-item" href="#">II Semester</a>
+          <a class="dropdown-item" href="#">III Semester</a>
+          <a class="dropdown-item" href="#">IV Semester</a>
+          <a class="dropdown-item" href="#">V Semester</a>
+          <a class="dropdown-item" href="#">VI Semester</a>
+          <a class="dropdown-item" href="#">VII Semester</a>
+          <a class="dropdown-item" href="#">VIII Semester</a>
+        </div>
+      </li>
+	  <a class="nav-item nav-link " href="http://diginotes.in/">Notes</a>
     </div>
-  </div>
+  </div></right>
 </nav>
-<center><script type="text/javascript" src="https://adhitzads.com/1032028"></script></center>
- <div class="branchSelect">
-<label>SELECT YOUR CYCLE: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
-<option value="">--Select Cycle--</option>
-</select>
 
+ <div class="branchSelect">
+ <h2>I Semester</h1>
+ </br>
+<label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+<option value="">--Select Branch--</option>
+</select>
 </div>
 <div class="body" >
 <form>
@@ -85,11 +105,21 @@
   <label>FOUNDRY AND FORGING LAB/ MACHINE SHOP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"></br><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset"></div>  -->
   <label class="sgpa">SGPA: {{ result() }}</label>
- <center><iframe data-aa='1127080' src='//ad.a-ads.com/1127080?size=300x250' scrolling='no' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe>
-</center>
- </div> </div>
+  </div> <div class="sidebar">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- vtucgpa sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7241149652551443"
+     data-ad-slot="9980790123"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>	
 
-<center><footer class="footer">Powered by <a href="https://rooloodesigns.com">Rooloo </a></footer></center>
+<center><footer class="footer">Copyright © 2019 VTU CGPA | Powered by <a href="https://rooloodesigns.com">Rooloo </a></footer></center>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135018570-1"></script>
 <script>
