@@ -99,7 +99,7 @@ return "Enter the Marks";
 			
 
         };
-		$scope.cgpa3sem = function() {
+		$scope.cgpa6sem = function() {
 					var cgpa=(($scope.cg12345*158)+($scope.cg6*26))/184;
 								if( isNaN( cgpa ) ){
 return "0";
