@@ -94,7 +94,7 @@ width: 100%;
     padding: 1%;
     display: flex;
     justify-content: center;
-	   min-height: 350px;
+	   min-height: 300px;
 }
 }
 input[type="reset"] {
