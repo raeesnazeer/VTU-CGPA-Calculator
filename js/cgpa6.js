@@ -24,6 +24,7 @@ $scope.is = false;
 $scope.ec = false;
 $scope.civil = false;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "2")
 {
@@ -32,6 +33,7 @@ $scope.is = true;
 $scope.ec = false;
 $scope.civil = false;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "3")
 {
@@ -40,6 +42,7 @@ $scope.is = false;
 $scope.ec = true;
 $scope.civil =false ;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "4")
 {
@@ -48,6 +51,7 @@ else if ($scope.userselected.userid == "4")
 $scope.ec = false;
 $scope.civil = true;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "5")
 {
@@ -56,6 +60,7 @@ else if ($scope.userselected.userid == "5")
 $scope.ec = false;
 $scope.civil = false ;
 $scope.mech = true;
+$scope.reset();
 }
 }
 
@@ -99,6 +104,17 @@ return "Enter the Marks";
 			
 
         };
+		$scope.reset = function(){
+				$scope.sub1="";
+				$scope.sub2="";
+				$scope.sub3="";
+				$scope.sub4="";
+				$scope.sub5="";
+				$scope.sub6="";
+				$scope.lab1="";
+				$scope.lab2="";
+	};
+	
 		$scope.cgpa6sem = function() {
 					var cgpa=(($scope.cg12345*158)+($scope.cg6*26))/184;
 								if( isNaN( cgpa ) ){

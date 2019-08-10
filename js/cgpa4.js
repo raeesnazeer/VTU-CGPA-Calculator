@@ -20,6 +20,7 @@ $scope.cs = true;
 $scope.ec = false;
 $scope.civil = false;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "2")
 {
@@ -27,6 +28,7 @@ else if ($scope.userselected.userid == "2")
 $scope.ec = true;
 $scope.civil = false;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "3")
 {
@@ -34,6 +36,7 @@ else if ($scope.userselected.userid == "3")
 $scope.ec = false;
 $scope.civil = true;
 $scope.mech = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "4")
 {
@@ -41,6 +44,7 @@ else if ($scope.userselected.userid == "4")
 $scope.ec = false;
 $scope.civil = false;
 $scope.mech = true;
+$scope.reset();
 }
 }
 
@@ -63,6 +67,17 @@ $scope.mech = true;
         return 10;
 };
 
+$scope.reset = function(){
+				$scope.sub1="";
+				$scope.sub2="";
+				$scope.sub3="";
+				$scope.sub4="";
+				$scope.sub5="";
+				$scope.sub6="";
+				$scope.sub7="";
+				$scope.lab1="";
+				$scope.lab2="";
+	};
 
         $scope.result = function() {
 			var gradeSub1 = $scope.calculateGrade($scope.sub1);

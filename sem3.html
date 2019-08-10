@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
-<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,sem,3rd semester,3rd sem,3 sem ,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
 <meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
 <link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="32x32" />
 <link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="192x192" />
@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="css/body.css">
 <script src= "js/cgpa3.js"></script>
-<title>VTU CGPA Calculator</title>
+<title>VTU CGPA Calculator - 3rd Semester</title>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
@@ -61,6 +61,7 @@
 </nav>
 
  <div class="branchSelect">
+ <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" class="visible"  alt="">
  <h2>III Semester</h1>
  </br>
 <label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
@@ -80,7 +81,14 @@
   <label><b>LABS</b></label>
      <div class="labs"> <label>ANALOG AND DIGITAL ELECTRONICS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>DATA STRUCTURES LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script></div>
 <div ng-show='ec'>
   <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>ELECTRONIC INSTRUMENTATION: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub5"><button class="inputsidebar">/100</button></br>
@@ -93,6 +101,13 @@
      <div class="labs"> <label>ANALOG ELECTRONICS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>DIGITAL ELECTRONICS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
   </div>
 <div ng-show='civil'>
   <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
@@ -106,6 +121,13 @@
      <div class="labs"> <label>BUILDING MATERIALS TESTING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>BASIC SURVEYING PRACTICE: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
   </div>
 <div ng-show='mech'>
   <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
@@ -118,7 +140,14 @@
   <label><b>LABS</b></label>
      <div class="labs"> <label>MATERIALS TESTING / MECHANICAL MEASUREMENTS AND METROLOGY LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>FOUNDRY AND FORGING LAB/ MACHINE SHOP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"></br><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>  
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script></div>  
   <label class="sgpa">SGPA: {{ result() }}</label>
     <label>1st Year CGPA: </label><input type="number" min="0" max="10" ng-model="cg12" placeholder="CGPA" ><button class="inputsidebar">/10</button></br>
     <label>III Semester SGPA: </label><input type="number" min="0" max="10" ng-model="cg3" placeholder="CGPA"  value="{{ result() || 0}}"><button class="inputsidebar">/10</button></br>
