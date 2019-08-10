@@ -133,6 +133,7 @@ input[type="reset"] {
 	input[type="reset"]{
 		display:none;
 	}
-	
+	.adsbygoogle{
+		Display:none!important;
 }
 
