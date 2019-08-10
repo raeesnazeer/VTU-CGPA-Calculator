@@ -13,11 +13,13 @@ if ($scope.userselected.userid == "1")
 {
 $scope.physics = true;
 $scope.chemistry = false;
+$scope.reset();
 }
 else if ($scope.userselected.userid == "2")
 {
 	$scope.physics = false;
 $scope.chemistry = true;
+$scope.reset();
 }
 
 }
@@ -40,6 +42,16 @@ $scope.chemistry = true;
     else if (item >=90)
         return 10;
 };
+		$scope.reset = function(){
+				$scope.sub1="";
+				$scope.sub2="";
+				$scope.sub3="";
+				$scope.sub4="";
+				$scope.sub5="";
+				$scope.sub6="";
+				$scope.lab1="";
+				$scope.lab2="";
+	};
 
 
         $scope.result = function() {

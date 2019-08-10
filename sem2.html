@@ -3,8 +3,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
-<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
-<meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
+<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,sem,2nd sem,2 sem,2nd semester,sem 2,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="description" content="Calculate your sgpa and cgpa of your vtu 2nd semester results quickly.">
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="css/body.css">
 <script src= "js/cgpa2.js"></script>
-<title>VTU CGPA Calculator</title>
+<title>VTU CGPA Calculator - 2nd Semester</title>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-7241149652551443",
@@ -60,10 +60,11 @@
 </nav>
 
  <div class="branchSelect">
+  <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" class="visible"  alt="">
  <h2>II Semester</h1>
  </br>
-<label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
-<option value="">--Select Branch--</option>
+<label>SELECT YOUR CYCLE: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+<option value="">--Select Cycle--</option>
 </select>
 </div>
 <div class="body" >
@@ -77,7 +78,15 @@
 	 <label>TECHNICAL ENGLISH-I: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
      <div class="labs"> <label>ENGINEERING PHYSICS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>BASIC ELECTRICAL ENGINEERING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>
 <div ng-show='chemistry'>
   <label>CALCULUS AND LINEAR ALGEBRA: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>ENGINEERING CHEMISTRY: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
@@ -88,6 +97,13 @@
      <div class="labs"> <label>ENGINEERING CHEMISTRY LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>C PROGRAMMING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
   </div>
 <!--<div ng-show='civil'>
   <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>

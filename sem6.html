@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
-<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="keywords" content="vtu,vtu result,vtu results,results,6th semester,6th sem,6 sem,sem,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
 <meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
 <link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="32x32" />
 <link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="192x192" />
@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="css/body.css">
 <script src= "js/cgpa6.js"></script>
-<title>VTU CGPA Calculator</title>
+<title>VTU CGPA Calculator - 6th Semester</title>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-7241149652551443",
@@ -60,6 +60,7 @@
 </nav>
 
  <div class="branchSelect">
+ <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" class="visible"  alt="">
  <h2>VI Semester</h1>
  </br>
 <label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
@@ -78,7 +79,14 @@
   <label><b>LABS</b></label>
      <div class="labs"> <label>SYSTEM SOFTWARE AND OPERATING SYSTEM LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>COMPUTER GRAPHICS LAB WITH MINI PROJECT: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>
 <div ng-show='is'>
   <label>CRYPTOGRAPHY, NETWORK SECURITY AND CYBER LAW: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>FILE STRUCTURES: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
@@ -89,7 +97,14 @@
   <label><b>LABS</b></label>
      <div class="labs"> <label>SOFTWARE TESTING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>FILE STRUCTURES LAB WITH MINI PROJECT: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>
 <div ng-show='ec'>
   <label>DIGITAL COMMUNICATION: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>ARM MICROCONTROLLER & EMBEDDED SYSTEMS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
@@ -101,6 +116,12 @@
      <div class="labs"> <label>EMBEDDED CONTROLLER LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>COMPUTER NETWORKS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset">
+ <button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
   </div>
 <div ng-show='civil'>
   <label>CONSTRUCTION MANAGEMENT AND ENTREPRENEURSHIP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
@@ -113,7 +134,12 @@
      <div class="labs"> <label>SOFTWARE APPLICATION LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>EXTENSIVE SURVEY PROJECT /CAMP: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset">
-  </div>
+ <button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script></div>
 <div ng-show='mech'>
   <label>FINITE ELEMENT ANALYSIS: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>COMPUTER INTEGRATED MANUFACTURING: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
@@ -124,7 +150,14 @@
   <label><b>LABS</b></label>
      <div class="labs"> <label>HEAT TRANSFER LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>MODELING AND ANALYSIS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"></br><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>  
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>  
   <label class="sgpa">SGPA: {{ result() }}</label>
       <label>Last 5 semsester CGPA: </label><input type="number" min="0" max="10" ng-model="cg12345" placeholder="CGPA" ><button class="inputsidebar">/10</button></br>
     <label>VI Semester SGPA: </label><input type="number" min="0" max="10" ng-model="cg6" placeholder="CGPA"  value="{{ result() || 0}}"><button class="inputsidebar">/10</button></br>

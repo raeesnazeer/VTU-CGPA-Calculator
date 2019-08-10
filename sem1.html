@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
-<meta name="keywords" content="vtu,vtu result,vtu results,results,marks,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="keywords" content="vtu,vtu result,vtu results,results,sem,1st semester,1st sem,marks,1 sem,vtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
 <meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
 <link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="32x32" />
 <link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="192x192" />
@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="css/body.css">
 <script src= "js/cgpa.js"></script>
-<title>VTU CGPA Calculator</title>
+<title>VTU CGPA Calculator - 1st Semester</title>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
@@ -61,10 +61,11 @@
 </nav>
 
  <div class="branchSelect">
+ <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" class="visible"  alt="">
  <h2>I Semester</h1>
  </br>
-<label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
-<option value="">--Select Branch--</option>
+<label>SELECT YOUR CYCLE: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+<option value="">--Select Cycle--</option>
 </select>
 </div>
 <div class="body" >
@@ -78,7 +79,14 @@
 	 <label>TECHNICAL ENGLISH-I: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
      <div class="labs"> <label>ENGINEERING PHYSICS LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>BASIC ELECTRICAL ENGINEERING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
-<input type="reset" value="Reset"></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script></div>
 <div ng-show='chemistry'>
   <label>CALCULUS AND LINEAR ALGEBRA: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>ENGINEERING CHEMISTRY: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
@@ -89,7 +97,18 @@
      <div class="labs"> <label>ENGINEERING CHEMISTRY LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
   <label>C PROGRAMMING LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
 <input type="reset" value="Reset">
-  </div>
+<button onclick="myFunction()" class ="download">Download</button>
+
+
+<!--<div class ="download">-->
+<script>
+function myFunction() {
+  window.print();
+}
+
+</script>
+</div>
+ <!-- </div>-->
 <!--<div ng-show='civil'>
   <label>ENGINEERING MATHEMATICS III: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
   <label>STRENGTH OF MATERIALS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
@@ -126,7 +145,8 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</div></div>	
+</div></div>
+	
 
 <center><footer class="footer">Copyright © 2019 VTU CGPA | Powered by <a href="https://rooloodesigns.com">Rooloo </a></footer></center>
 <!-- Global site tag (gtag.js) - Google Analytics -->
