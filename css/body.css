@@ -102,3 +102,37 @@ input[type="reset"] {
     color: #fff;
     padding: 3px 10px;
 }
+
+
+	.download{
+		 float: right;
+    background: #1db0e8;
+    color: #fff;
+    padding: 2px 9px;
+	 border: 1px solid #1db0e8;
+	     border-radius: 4px;
+		 margin: 3px;
+	 
+	}
+	
+.visible{
+	display:none;
+	
+}
+
+@media print{
+	.sidebar{
+		display:none;
+	}
+	.visible{
+		display:block;
+	}
+	.download{
+		display:none;
+	}
+	input[type="reset"]{
+		display:none;
+	}
+	
+}
+
