@@ -1,0 +1,188 @@
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Yvm3dcfl1nK1aZwp4d82hlAg2K_paLAEzbNRGbfwEI4" />
+<meta name="keywords" content="vtu,vtu result,vtu results,results,sem,,marks,7th semester,7th sem,7 semvtu marks,cpga,sgpa,vtu cgpa,calculate,score,grade,calculator">
+<meta name="description" content="Calculate your sgpa and cgpa of your vtu results quickly.">
+<link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="32x32" />
+<link rel="icon" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" />
+<meta name="msapplication-TileImage" content="https://vtucgpa.me/wp-content/uploads/2019/03/vicon.png" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/body.css">
+<script src= "js/cgpa7.js"></script>
+<title>VTU CGPA Calculator - 7th Semester</title>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7241149652551443",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<div ng-app="CalculatorApp" ng-controller="CalculatorController" style="
+    display: block;
+    width: 100%;
+">
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+   <a class="navbar-brand" href="/">
+    <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <right>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+	  <a class="nav-item nav-link " href="http://results.vtu.ac.in/">Results</a>
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SGPA Calculator
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/sgpa/sem1.html">I Semester</a>
+          <a class="dropdown-item" href="/sgpa/sem2.html">II Semester</a>
+          <a class="dropdown-item" href="/sgpa/sem3.html">III Semester</a>
+          <a class="dropdown-item" href="/sgpa/sem4.html">IV Semester</a>
+          <a class="dropdown-item" href="/sgpa/sem5.html">V Semester</a>
+          <a class="dropdown-item  active" href="/sgpa/sem6.html">VI Semester</a>
+          <a class="dropdown-item" href="/sgpa/sem7.html">VII Semester</a>
+          <a class="dropdown-item" href="/sgpa/sem8.html">VIII Semester</a>
+        </div>
+      </li>
+	  <a class="nav-item nav-link " href="http://diginotes.in/">Notes</a>
+    </div>
+  </div></right>
+</nav>
+
+ <div class="branchSelect">
+ <img src="https://vtucgpa.me/wp-content/uploads/2019/03/vtu-237x59.png" class="visible"  alt="">
+ <h2>VII Semester</h1>
+ </br>
+<label>SELECT YOUR BRANCH: </label><select name="users" ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+<option value="">--Select Branch--</option>
+</select>
+</div>
+<div class="body" >
+<form>
+<div ng-show='cs'>
+  <label>WEB TECHNOLOGY AND ITS APPLICATIONS : </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>ADVANCED COMPUTER ARCHITECTURES : </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>MACHINE LEARNING : </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>PROFESSIONAL ELECTIVE 3 : </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 4 : </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>PROJECT PHASE 1+SEMINAR: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+	 <label><b>LABS</b></label>
+     <div class="labs"> <label>MACHINE LEARNING LABORATORY : </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>WEB TECHNOLOGY LABORATORY WITH MINI PROJECT: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>
+<div ng-show='is'>
+  <label>INTERNET OF THINGS AND APPLICATIONS: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>BIG DATA ANALYTICS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 5: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>INTERNSHIP / PROFESSIONAL PRACTICE: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROJECT WORK PHASE 2: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>SEMINAR: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>
+<div ng-show='ec'>
+  <label>MICROWAVE AND ANTENNAS : </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>DIGITAL IMAGE PROCESSING: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>POWER ELECTRONICS: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>PROFESSIONAL ELECTIVE-3: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE-4: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>PROJECT WORK PHASE–I + PROJECT WORK SEMINAR: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+label><b>LABS</b></label>
+     <div class="labs"> <label>ADVANCED COMMUNICATION LAB  : </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>VLSI LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+  <button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+  </div>
+<div ng-show='civil'>
+  <label>MUNICIPAL AND INDUSTRIAL WASTE WATER ENGINEERING: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>DESIGN OF RCC AND STEEL STRUCTURES: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>HYDROLOGY AND IRRIGATION ENGINEERING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>PROFESSIONAL ELECTIVE 3: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 4: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>PROJECT PHASE I +PROJECT SEMINAR: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"><button class="inputsidebar">/100</button></br>
+label><b>LABS</b></label>
+     <div class="labs"> <label>ENVIRONMENTAL ENGINEERING LABORATORY: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>COMPUTER AIDED DETAILING OF STRUCTURES: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+  <button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+  </div>
+<div ng-show='mech'>
+  <label>ENERGY ENGINEERING: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="sub1"><button class="inputsidebar">/100</button></br>
+  <label>FLUID POWER SYSTEMS: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub2"><button class="inputsidebar">/100</button></br>
+    <label>CONTROL ENGINEERING: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub3"><button class="inputsidebar">/100</button></br>
+<label>PROFESSIONAL ELECTIVE 3: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub4"><button class="inputsidebar">/100</button></br>
+    <label>PROFESSIONAL ELECTIVE 4: </label><input type="number" min="0" max="100"placeholder="Marks" ng-model="sub5"><button class="inputsidebar">/100</button></br>
+	 <label>PROJECT PHASE I: </label><input type="number" min="0" max="100" placeholder="Marks"ng-model="sub6"></br><button class="inputsidebar">/100</button></br>
+label><b>LABS</b></label>
+     <div class="labs"> <label>DESIGN LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab1"><button class="inputsidebar">/100</button></br>
+  <label>CIM LAB: </label><input type="number" min="0" max="100" placeholder="Marks" ng-model="lab2"><button class="inputsidebar">/100</button></br></div>
+<input type="reset" value="Reset">
+<button onclick="myFunction()" class ="download">Download</button>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+</div>  
+  <label class="sgpa">SGPA: {{ result() }}</label>
+      <label>Last 6 semester CGPA: </label><input type="number" min="0" max="10" ng-model="cg123456" placeholder="CGPA" ><button class="inputsidebar">/10</button></br>
+    <label>VIII Semester SGPA: </label><input type="number" min="0" max="10" ng-model="cg7" placeholder="CGPA"  value="{{ result() || 0}}"><button class="inputsidebar">/10</button></br>
+  <label class="sgpa">CGPA: {{ cgpa7sem() }}</label>
+ </div> <div class="sidebar">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- vtucgpa sidebar -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:300px"
+     data-ad-client="ca-pub-7241149652551443"
+     data-ad-slot="9980790123"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>	
+
+<center><footer class="footer">Copyright © 2019 VTU CGPA | Powered by <a href="https://rooloodesigns.com">Rooloo </a></footer></center>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135018570-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135018570-1');
+</script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</footer>
