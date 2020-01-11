@@ -115,8 +115,8 @@ return "Enter the Marks";
 				$scope.lab2="";
 	};
 	
-		$scope.cgpa6sem = function() {
-					var cgpa=(($scope.cg1234*132)+($scope.cg6*26))/158;
+		$scope.cgpa5sem = function() {
+					var cgpa=(($scope.cg1234*132)+($scope.cg5*26))/158;
 								if( isNaN( cgpa ) ){
 return "0";
 }else
