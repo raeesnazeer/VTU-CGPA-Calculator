@@ -86,7 +86,7 @@ $scope.reset = function(){
 			var gradeSub4 = $scope.calculateGrade($scope.sub4);
 			var gradeSub5 = $scope.calculateGrade($scope.sub5);
 			var gradeSub6 = $scope.calculateGrade($scope.sub6);
-			var gradeSub7 = $scope.calculateGrade(($scope.sub7)*2);
+			var gradeSub7 = $scope.calculateGrade($scope.sub7);
 			var gradeLab1 = $scope.calculateGrade($scope.lab1);
 			var gradeLab2 = $scope.calculateGrade($scope.lab2);
 			
