@@ -100,7 +100,7 @@ return "Enter the Marks";
 
         };
 		$scope.cgpa4sem = function() {
-					var cgpa=(($scope.cg123*72)+($scope.cg4*28))/104;
+					var cgpa=(($scope.cg123*64)+($scope.cg4*24))/88;
 								if( isNaN( cgpa ) ){
 return "0";
 }else
