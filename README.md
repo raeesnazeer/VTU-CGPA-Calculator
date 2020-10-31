@@ -1,1 +1,1 @@
-# VTU-CGPA-Calculator.
+# VTU-CGPA-Calculator
